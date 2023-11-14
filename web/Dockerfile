@@ -3,7 +3,7 @@ FROM node:18.17.0-alpine AS base
 
 # install packages
 FROM base as packages
-LABEL maintainer="takatost@gmail.com"
+LABEL maintainer="nguyendk.on@gmail.com"
 
 WORKDIR /app/web
 

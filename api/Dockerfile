@@ -1,7 +1,7 @@
 # packages install stage
 FROM python:3.10-slim AS base
 
-LABEL maintainer="takatost@gmail.com"
+LABEL maintainer="nguyendk.on@gmail.com"
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends gcc g++ python3-dev libc-dev libffi-dev
