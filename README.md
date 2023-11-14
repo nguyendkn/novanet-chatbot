@@ -17,7 +17,7 @@ A single API encompassing plugin capabilities, context enhancement, and more, sa
 Visual data analysis, log review, and annotation for applications
 
 
-https://github.com/langgenius/chatbot/assets/100913391/f6e658d5-31b3-4c16-a0af-9e191da4d0f6
+https://github.com/nguyendkn/chatbot/assets/100913391/f6e658d5-31b3-4c16-a0af-9e191da4d0f6
 
 
 ## Highlighted Features
@@ -120,7 +120,7 @@ A: English and Chinese are currently supported, and you can contribute language 
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=langgenius/chatbot&type=Date)](https://star-history.com/#langgenius/chatbot&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=nguyendkn/chatbot&type=Date)](https://star-history.com/#nguyendkn/chatbot&Date)
 
 
 ## Contributing 
@@ -138,7 +138,7 @@ You can submit your issues or ideas by adding issues to the Chatbot repository. 
 
 ### Share your applications
 
-We encourage all community members to share their AI applications built on Chatbot, which can be applied to different scenarios or different users. This will provide powerful inspiration for people who want to create AI capabilities! You can share your experience by [submitting an issue in the Chatbot-user-case repository](https://github.com/langgenius/chatbot-user-case/issues).  
+We encourage all community members to share their AI applications built on Chatbot, which can be applied to different scenarios or different users. This will provide powerful inspiration for people who want to create AI capabilities! You can share your experience by [submitting an issue in the Chatbot-user-case repository](https://github.com/nguyendkn/chatbot-user-case/issues).  
 
 ### Share Chatbot with others
 

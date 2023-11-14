@@ -87,7 +87,7 @@ A: 現在、英語と中国語に対応しており、言語パックを寄贈�
 
 ## Star ヒストリー
 
-[![Star History Chart](https://api.star-history.com/svg?repos=langgenius/chatbot&type=Date)](https://star-history.com/#langgenius/chatbot&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=nguyendkn/chatbot&type=Date)](https://star-history.com/#nguyendkn/chatbot&Date)
 
 ## お問合せ
 

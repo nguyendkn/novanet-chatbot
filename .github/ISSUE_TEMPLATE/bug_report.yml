@@ -5,7 +5,7 @@ labels:
 body:
 - type: markdown
   attributes:
-    value: Please make sure to [search for existing issues](https://github.com/langgenius/chatbot/issues) before filing a new one!
+    value: Please make sure to [search for existing issues](https://github.com/nguyendkn/chatbot/issues) before filing a new one!
 - type: input
   attributes:
     label: Chatbot version

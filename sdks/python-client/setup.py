@@ -11,7 +11,7 @@ setup(
     description="A package for interacting with the Chatbot Service-API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/langgenius/chatbot",
+    url="https://github.com/nguyendkn/chatbot",
     license='MIT',
     packages=['chatbot_client'],
     classifiers=[

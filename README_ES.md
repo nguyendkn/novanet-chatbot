@@ -86,7 +86,7 @@ R: Actualmente se admiten inglés y chino, y puedes contribuir con paquetes de i
 
 ## Historial de estrellas
 
-[![Gráfico de historial de estrellas](https://api.star-history.com/svg?repos=langgenius/chatbot&type=Date)](https://star-history.com/#langgenius/chatbot&Date)
+[![Gráfico de historial de estrellas](https://api.star-history.com/svg?repos=nguyendkn/chatbot&type=Date)](https://star-history.com/#nguyendkn/chatbot&Date)
 
 ## Contáctanos
 

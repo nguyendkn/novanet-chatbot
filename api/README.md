@@ -59,6 +59,6 @@
    You can start the frontend by running `npm install && npm run dev` in web/ folder, or you can use docker to start the frontend, for example:
 
    ```
-   docker run -it -d --platform linux/amd64 -p 3000:3000 -e EDITION=SELF_HOSTED -e CONSOLE_URL=http://127.0.0.1:5001 --name web-self-hosted langgenius/chatbot-web:latest
+   docker run -it -d --platform linux/amd64 -p 3000:3000 -e EDITION=SELF_HOSTED -e CONSOLE_URL=http://127.0.0.1:5001 --name web-self-hosted nguyendkn/chatbot-web:latest
    ```
    This will start a chatbot frontend, now you are all set, happy coding!

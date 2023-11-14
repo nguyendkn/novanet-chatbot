@@ -41,11 +41,11 @@ export default function AccountAbout({
           <LogoSite className='mx-auto mb-2' />
           <div className='mb-3 text-center text-xs font-normal text-gray-500'>Version {langeniusVersionInfo?.current_version}</div>
           <div className='mb-4 text-center text-xs font-normal text-gray-700'>
-            <div>© 2023 LangGenius, Inc., Contributors.</div>
+            <div>© 2023 Novaon, Inc., Contributors.</div>
             <div className='text-[#1C64F2]'>
               {
                 IS_CE_EDITION
-                  ? <Link href={'https://github.com/langgenius/chatbot/blob/main/LICENSE'} target='_blank'>Open Source License</Link>
+                  ? <Link href={'https://github.com/nguyendkn'} target='_blank'>Open Source License</Link>
                   : <>
                     <Link href={locale === 'en' ? 'https://docs.chatbot.ai/user-agreement/privacy-policy' : 'https://docs.chatbot.ai/v/zh-hans/yong-hu-xie-yi/yin-si-xie-yi'} target='_blank'>Privacy Policy</Link>,
                     <Link href={locale === 'en' ? 'https://docs.chatbot.ai/user-agreement/terms-of-service' : 'https://docs.chatbot.ai/v/zh-hans/yong-hu-xie-yi/fu-wu-xie-yi'} target='_blank'>Terms of Service</Link>
@@ -66,7 +66,7 @@ export default function AccountAbout({
           <div className='flex items-center'>
             <Link
               className={classNames(buttonClassName, 'mr-2')}
-              href={'https://github.com/langgenius/chatbot/releases'}
+              href={'https://github.com/nguyendkn'}
               target='_blank'
             >
               {t('common.about.changeLog')}

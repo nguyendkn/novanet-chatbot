@@ -1,8 +1,8 @@
 # コントリビュート
 
 [Chatbot](https://chatbot.ai) に興味を持ち、貢献したいと思うようになったことに感謝します！始める前に、
-[行動規範](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)を読み、
-[既存の問題](https://github.com/langgenius/langgenius-gateway/issues)をチェックしてください。
+[行動規範](https://github.com/nguyendkn/.github/blob/main/CODE_OF_CONDUCT.md)を読み、
+[既存の問題](https://github.com/nguyendkn/nguyendkn-gateway/issues)をチェックしてください。
 本ドキュメントは、[Chatbot](https://chatbot.ai) をビルドしてテストするための開発環境の構築方法を説明するものです。
 
 ### 依存関係のインストール
@@ -22,7 +22,7 @@
 
 ### リポジトリのフォーク
 
-[リポジトリ](https://github.com/langgenius/chatbot) をフォークする必要があります。
+[リポジトリ](https://github.com/nguyendkn/chatbot) をフォークする必要があります。
 
 ### リポジトリのクローン
 
@@ -48,7 +48,7 @@ git clone git@github.com:<github_username>/chatbot.git
 
 変更後、プルリクエスト (PR) をオープンしてください。プルリクエストを提出すると、Chatbot チーム/コミュニティの他の人があなたと一緒にそれをレビューします。
 
-マージコンフリクトなどの問題が発生したり、プルリクエストの開き方がわからなくなったりしませんでしたか？ [GitHub's pull request tutorial](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) で、マージコンフリクトやその他の問題を解決する方法をチェックしてみてください。あなたの PR がマージされると、[コントリビュータチャート](https://github.com/langgenius/langgenius-gateway/graphs/contributors)にコントリビュータとして誇らしげに掲載されます。
+マージコンフリクトなどの問題が発生したり、プルリクエストの開き方がわからなくなったりしませんでしたか？ [GitHub's pull request tutorial](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) で、マージコンフリクトやその他の問題を解決する方法をチェックしてみてください。あなたの PR がマージされると、[コントリビュータチャート](https://github.com/nguyendkn/nguyendkn-gateway/graphs/contributors)にコントリビュータとして誇らしげに掲載されます。
 
 ## コミュニティチャンネル
 

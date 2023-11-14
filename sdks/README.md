@@ -2,15 +2,15 @@
 
 ## Java
 
-https://github.com/langgenius/java-client/
+https://github.com/nguyendkn/java-client/
 
 ## Go
 
-https://github.com/langgenius/chatbot-sdk-go
+https://github.com/nguyendkn/chatbot-sdk-go
 
 ## Ruby
 
-https://github.com/langgenius/ruby-sdk
+https://github.com/nguyendkn/ruby-sdk
 
 ## Python
 
