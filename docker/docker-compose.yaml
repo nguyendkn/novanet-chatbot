@@ -2,7 +2,7 @@ version: '3.1'
 services:
   # API service
   api:
-    image: nguyendkn/chatbot-api:0.3.30
+    image: nguyendkn/chatbot-api:main
     restart: always
     environment:
       # Startup mode, 'api' starts the API server.
@@ -128,7 +128,7 @@ services:
   # worker service
   # The Celery worker for processing the queue.
   worker:
-    image: nguyendkn/chatbot-api:0.3.30
+    image: nguyendkn/chatbot-api:main
     restart: always
     environment:
       # Startup mode, 'worker' starts the Celery worker for processing the queue.
@@ -196,7 +196,7 @@ services:
 
   # Frontend web application.
   web:
-    image: nguyendkn/chatbot-web:0.3.30
+    image: nguyendkn/chatbot-web:main
     restart: always
     environment:
       EDITION: SELF_HOSTED
