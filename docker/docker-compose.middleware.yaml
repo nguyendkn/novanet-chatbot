@@ -6,9 +6,9 @@ services:
     restart: always
     environment:
       # The password for the default postgres user.
-      POSTGRES_PASSWORD: difyai123456
+      POSTGRES_PASSWORD: chatbotai123456
       # The name of the default postgres database.
-      POSTGRES_DB: dify
+      POSTGRES_DB: chatbot
       # postgres data directory
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
@@ -24,7 +24,7 @@ services:
       # Mount the redis data directory to the container.
       - ./volumes/redis/data:/data
     # Set the redis password when startup redis server.
-    command: redis-server --requirepass difyai123456
+    command: redis-server --requirepass chatbotai123456
     ports:
       - "6379:6379"
 
@@ -45,9 +45,9 @@ services:
       CLUSTER_HOSTNAME: 'node1'
       AUTHENTICATION_APIKEY_ENABLED: 'true'
       AUTHENTICATION_APIKEY_ALLOWED_KEYS: 'WVF5YThaHlkYwhGUSmCRgsX3tD5ngdN8pkih'
-      AUTHENTICATION_APIKEY_USERS: 'hello@dify.ai'
+      AUTHENTICATION_APIKEY_USERS: 'hello@chatbot.ai'
       AUTHORIZATION_ADMINLIST_ENABLED: 'true'
-      AUTHORIZATION_ADMINLIST_USERS: 'hello@dify.ai'
+      AUTHORIZATION_ADMINLIST_USERS: 'hello@chatbot.ai'
     ports:
       - "8080:8080"
 
@@ -61,6 +61,6 @@ services:
 #    volumes:
 #      - ./volumes/qdrant:/qdrant/storage
 #    environment:
-#      QDRANT__API_KEY: 'difyai123456'
+#      QDRANT__API_KEY: 'chatbotai123456'
 #    ports:
 #      - "6333:6333"

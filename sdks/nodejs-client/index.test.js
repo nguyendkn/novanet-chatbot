@@ -1,30 +1,30 @@
-import { DifyClient, BASE_URL, routes } from ".";
+import { ChatbotClient, BASE_URL, routes } from ".";
 
 import axios from 'axios'
 
 jest.mock('axios')
 
 describe('Client', () => {
-  let difyClient
+  let chatbotClient
   beforeEach(() => {
-    difyClient = new DifyClient('test')
+    chatbotClient = new ChatbotClient('test')
   })
 
   test('should create a client', () => {
-    expect(difyClient).toBeDefined();
+    expect(chatbotClient).toBeDefined();
   })
   // test updateApiKey
   test('should update the api key', () => {
-    difyClient.updateApiKey('test2');
-    expect(difyClient.apiKey).toBe('test2');
+    chatbotClient.updateApiKey('test2');
+    expect(chatbotClient.apiKey).toBe('test2');
   })
 });
 
 describe('Send Requests', () => {
-  let difyClient
+  let chatbotClient
 
   beforeEach(() => {
-    difyClient = new DifyClient('test')
+    chatbotClient = new ChatbotClient('test')
   })
 
   afterEach(() => {
@@ -37,7 +37,7 @@ describe('Send Requests', () => {
     const expectedResponse = { data: 'response' }
     axios.mockResolvedValue(expectedResponse)
 
-    await difyClient.sendRequest(method, endpoint)
+    await chatbotClient.sendRequest(method, endpoint)
 
     expect(axios).toHaveBeenCalledWith({
       method,
@@ -45,7 +45,7 @@ describe('Send Requests', () => {
       data: null,
       params: null,
       headers: {
-        Authorization: `Bearer ${difyClient.apiKey}`,
+        Authorization: `Bearer ${chatbotClient.apiKey}`,
         'Content-Type': 'application/json',
       },
       responseType: 'json',
@@ -59,7 +59,7 @@ describe('Send Requests', () => {
     const errorMessage = 'Request failed with status code 404'
     axios.mockRejectedValue(new Error(errorMessage))
 
-    await expect(difyClient.sendRequest(method, endpoint)).rejects.toThrow(
+    await expect(chatbotClient.sendRequest(method, endpoint)).rejects.toThrow(
       errorMessage
     )
   })

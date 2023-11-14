@@ -61,7 +61,7 @@ const Main: FC<IMainProps> = ({
       if (plan !== 'basic')
         document.title = `${siteInfo.title}`
       else
-        document.title = `${siteInfo.title} - Powered by Dify`
+        document.title = `${siteInfo.title} - Powered by Chatbot`
     }
   }, [siteInfo?.title, plan])
 
@@ -535,7 +535,7 @@ const Main: FC<IMainProps> = ({
     createNewChat()
   }
 
-  const difyIcon = (
+  const chatbotIcon = (
     <LogoHeader />
   )
 
@@ -553,7 +553,7 @@ const Main: FC<IMainProps> = ({
       <Header
         title={siteInfo.title}
         icon=''
-        customerIcon={difyIcon}
+        customerIcon={chatbotIcon}
         icon_background={siteInfo.icon_background}
         isEmbedScene={true}
         isMobile={isMobile}

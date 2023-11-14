@@ -1,5 +1,5 @@
 import axios from "axios";
-export const BASE_URL = "https://api.dify.ai/v1";
+export const BASE_URL = "https://api.chatbot.ai/v1";
 
 export const routes = {
   application: {
@@ -36,7 +36,7 @@ export const routes = {
   },
 };
 
-export class DifyClient {
+export class ChatbotClient {
   constructor(apiKey, baseUrl = BASE_URL) {
     this.apiKey = apiKey;
     this.baseUrl = baseUrl;
@@ -106,7 +106,7 @@ export class DifyClient {
   }
 }
 
-export class CompletionClient extends DifyClient {
+export class CompletionClient extends ChatbotClient {
   createCompletionMessage(inputs, query, user, stream = false) {
     const data = {
       inputs,
@@ -124,7 +124,7 @@ export class CompletionClient extends DifyClient {
   }
 }
 
-export class ChatClient extends DifyClient {
+export class ChatClient extends ChatbotClient {
   createChatMessage(
     inputs,
     query,

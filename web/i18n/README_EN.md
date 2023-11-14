@@ -72,7 +72,7 @@ The current logic for adjusting the help documentation is: Chinese jumps to Chin
 
 ## Verification
 
-It is recommended to verify the newly added language pack through local deployment of the latest code. For reference: https://docs.dify.ai/getting-started/install-self-hosted/local-source-code
+It is recommended to verify the newly added language pack through local deployment of the latest code. For reference: https://docs.chatbot.ai/getting-started/install-self-hosted/local-source-code
 Verification points:
 1. Whether the initial installation has new language drop-down options, and whether the new language can be used for initialization
 2. Whether there is a new language drop-down option in personal settings, and whether the new language can be selected and saved 

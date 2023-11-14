@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="dify-client",
+    name="chatbot-client",
     version="0.1.8",
-    author="Dify",
-    author_email="hello@dify.ai",
-    description="A package for interacting with the Dify Service-API",
+    author="Chatbot",
+    author_email="hello@chatbot.ai",
+    description="A package for interacting with the Chatbot Service-API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/langgenius/dify",
+    url="https://github.com/langgenius/chatbot",
     license='MIT',
-    packages=['dify_client'],
+    packages=['chatbot_client'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -23,6 +23,6 @@ setup(
     install_requires=[
         "requests"
     ],
-    keywords='dify nlp ai language-processing',
+    keywords='chatbot nlp ai language-processing',
     include_package_data=True,
 )

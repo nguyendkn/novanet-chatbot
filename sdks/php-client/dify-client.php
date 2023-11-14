@@ -4,14 +4,14 @@ require 'vendor/autoload.php';
 
 use GuzzleHttp\Client;
 
-class DifyClient {
+class ChatbotClient {
     protected $api_key;
     protected $base_url;
     protected $client;
 
     public function __construct($api_key) {
         $this->api_key = $api_key;
-        $this->base_url = "https://api.dify.ai/v1/";
+        $this->base_url = "https://api.chatbot.ai/v1/";
         $this->client = new Client([
             'base_uri' => $this->base_url,
             'headers' => [
@@ -46,7 +46,7 @@ class DifyClient {
     }
 }
 
-class CompletionClient extends DifyClient {
+class CompletionClient extends ChatbotClient {
     public function create_completion_message($inputs, $query, $response_mode, $user) {
         $data = [
             'inputs' => $inputs,
@@ -58,7 +58,7 @@ class CompletionClient extends DifyClient {
     }
 }
 
-class ChatClient extends DifyClient {
+class ChatClient extends ChatbotClient {
     public function create_chat_message($inputs, $query, $user, $response_mode = 'blocking', $conversation_id = null) {
         $data = [
             'inputs' => $inputs,

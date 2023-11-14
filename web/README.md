@@ -1,4 +1,4 @@
-# Dify Frontend
+# Chatbot Frontend
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -13,7 +13,7 @@ npm install
 yarn
 ```
 
-Then, configure the environment variables. Create a file named `.env.local` in the current directory and copy the contents from `.env.example`. Modify the values of these environment variables according to your requirements:
+Then, configure the environment variables. Create a file named `.env.local` in the current directory and copy the contents from `.env.example`. Mochatbot the values of these environment variables according to your requirements:
 ```
 # For production release, change this to PRODUCTION
 NEXT_PUBLIC_DEPLOY_ENV=DEVELOPMENT
@@ -21,11 +21,11 @@ NEXT_PUBLIC_DEPLOY_ENV=DEVELOPMENT
 NEXT_PUBLIC_EDITION=SELF_HOSTED
 # The base URL of console application, refers to the Console base URL of WEB service if console domain is
 # different from api or web app domain.
-# example: http://cloud.dify.ai/console/api
+# example: http://cloud.chatbot.ai/console/api
 NEXT_PUBLIC_API_PREFIX=http://localhost:5001/console/api
 # The URL for Web APP, refers to the Web App base URL of WEB service if web app domain is different from
 # console or api domain.
-# example: http://udify.app/api
+# example: http://uchatbot.app/api
 NEXT_PUBLIC_PUBLIC_API_PREFIX=http://localhost:5001/api
 
 # SENTRY
@@ -47,14 +47,14 @@ You can start editing the file under folder `app`. The page auto-updates as you 
 ### Run by Docker
 First, Build the frontend image：
 ```bash
-docker build . -t dify-web
+docker build . -t chatbot-web
 ```
 
 Then, configure the environment variables.Use the same method mentioned in run by source code.
 
 Finally, run the frontend service:
 ```bash
-docker run -it -p 3000:3000 -e EDITION=SELF_HOSTED -e CONSOLE_URL=http://127.0.0.1:3000 -e APP_URL=http://127.0.0.1:3000 dify-web
+docker run -it -p 3000:3000 -e EDITION=SELF_HOSTED -e CONSOLE_URL=http://127.0.0.1:3000 -e APP_URL=http://127.0.0.1:3000 chatbot-web
 ```
 
 When the console api domain and web app api domain are different, you can set the CONSOLE_URL and APP_URL separately.
@@ -82,7 +82,7 @@ npm run start --port=3001 --host=0.0.0.0
 If your IDE is VSCode, rename `web/.vscode/settings.example.json` to `web/.vscode/settings.json` for lint code setting.
 
 ## Documentation
-Visit https://docs.dify.ai/getting-started/readme to view the full documentation.
+Visit https://docs.chatbot.ai/getting-started/readme to view the full documentation.
 
 ## Community
-The Dify community can be found on [Discord community](https://discord.com/invite/FngNHpbcY7), where you can ask questions, voice ideas, and share your projects.
+The Chatbot community can be found on [Discord community](https://discord.com/invite/FngNHpbcY7), where you can ask questions, voice ideas, and share your projects.

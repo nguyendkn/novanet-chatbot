@@ -1,13 +1,13 @@
-# dify-client
+# chatbot-client
 
-A Dify App Service-API Client, using for build a webapp by request Service-API
+A Chatbot App Service-API Client, using for build a webapp by request Service-API
 
 ## Usage
 
-First, install `dify-client` python sdk package:
+First, install `chatbot-client` python sdk package:
 
 ```
-pip install dify-client
+pip install chatbot-client
 ```
 
 Write your code with sdk:
@@ -16,7 +16,7 @@ Write your code with sdk:
 
 ```
 import json
-from dify_client import CompletionClient
+from chatbot_client import CompletionClient
 
 api_key = "your_api_key"
 
@@ -37,7 +37,7 @@ print(result.get('answer'))
 
 ```
 import json
-from dify_client import ChatClient
+from chatbot_client import ChatClient
 
 api_key = "your_api_key"
 
@@ -59,7 +59,7 @@ for line in chat_response.iter_lines(decode_unicode=True):
 
 ```
 import json
-from dify_client import ChatClient
+from chatbot_client import ChatClient
 
 api_key = "your_api_key"
 

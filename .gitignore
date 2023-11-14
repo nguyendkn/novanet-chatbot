@@ -148,7 +148,7 @@ docker/volumes/qdrant/*
 
 sdks/python-client/build
 sdks/python-client/dist
-sdks/python-client/dify_client.egg-info
+sdks/python-client/chatbot_client.egg-info
 
 .vscode/*
 !.vscode/launch.json

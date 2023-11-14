@@ -1,6 +1,6 @@
 import os
 import unittest
-from dify_client.client import ChatClient, CompletionClient, DifyClient
+from chatbot_client.client import ChatClient, CompletionClient, ChatbotClient
 
 API_KEY = os.environ.get("API_KEY")
 APP_ID = os.environ.get("APP_ID")
@@ -32,16 +32,16 @@ class TestCompletionClient(unittest.TestCase):
         self.assertIn("message_id", response)
 
 
-class TestDifyClient(unittest.TestCase):
+class TestChatbotClient(unittest.TestCase):
     def setUp(self):
-        self.dify_client = DifyClient(API_KEY)
+        self.chatbot_client = ChatbotClient(API_KEY)
 
     def test_message_feedback(self):
-        response = self.dify_client.message_feedback("test_message_id", 5, "test_user")
+        response = self.chatbot_client.message_feedback("test_message_id", 5, "test_user")
         self.assertIn("success", response)
 
     def test_get_application_parameters(self):
-        response = self.dify_client.get_application_parameters("test_user")
+        response = self.chatbot_client.get_application_parameters("test_user")
         self.assertIsInstance(response, dict)
 
 

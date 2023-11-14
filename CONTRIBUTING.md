@@ -1,13 +1,13 @@
 # Contributing
 
-Thanks for your interest in [Dify](https://dify.ai) and for wanting to contribute! Before you begin, read the
+Thanks for your interest in [Chatbot](https://chatbot.ai) and for wanting to contribute! Before you begin, read the
 [code of conduct](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md) and check out the
 [existing issues](https://github.com/langgenius/langgenius-gateway/issues).
-This document describes how to set up your development environment to build and test [Dify](https://dify.ai).
+This document describes how to set up your development environment to build and test [Chatbot](https://chatbot.ai).
 
 ### Install dependencies
 
-You need to install and configure the following dependencies on your machine to build [Dify](https://dify.ai):
+You need to install and configure the following dependencies on your machine to build [Chatbot](https://chatbot.ai):
 
 - [Git](http://git-scm.com/)
 - [Docker](https://www.docker.com/)
@@ -22,14 +22,14 @@ To set up a working development environment, just fork the project git repositor
 
 ### Fork the repository
 
-you need to fork the [repository](https://github.com/langgenius/dify).
+you need to fork the [repository](https://github.com/langgenius/chatbot).
 
 ### Clone the repo
 
 Clone your GitHub forked repository:
 
 ```
-git clone git@github.com:<github_username>/dify.git
+git clone git@github.com:<github_username>/chatbot.git
 ```
 
 ### Install backend
@@ -40,14 +40,14 @@ To learn how to install the backend application, please refer to the [Backend RE
 
 To learn how to install the frontend application, please refer to the [Frontend README](web/README.md).
 
-### Visit dify in your browser
+### Visit chatbot in your browser
 
-Finally, you can now visit [http://localhost:3000](http://localhost:3000) to view the [Dify](https://dify.ai) in local environment.
+Finally, you can now visit [http://localhost:3000](http://localhost:3000) to view the [Chatbot](https://chatbot.ai) in local environment.
 
 
 ## Create a pull request
 
-After making your changes, open a pull request (PR). Once you submit your pull request, others from the Dify team/community will review it with you.
+After making your changes, open a pull request (PR). Once you submit your pull request, others from the Chatbot team/community will review it with you.
 
 Did you have an issue, like a merge conflict, or don't know how to open a pull request? Check out [GitHub's pull request tutorial](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) on how to resolve merge conflicts and other issues. Once your PR has been merged, you will be proudly listed as a contributor in the [contributor chart](https://github.com/langgenius/langgenius-gateway/graphs/contributors).
 

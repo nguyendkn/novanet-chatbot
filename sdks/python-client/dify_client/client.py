@@ -1,10 +1,10 @@
 import requests
 
 
-class DifyClient:
+class ChatbotClient:
     def __init__(self, api_key):
         self.api_key = api_key
-        self.base_url = "https://api.dify.ai/v1"
+        self.base_url = "https://api.chatbot.ai/v1"
 
     def _send_request(self, method, endpoint, data=None, params=None, stream=False):
         headers = {
@@ -29,7 +29,7 @@ class DifyClient:
         return self._send_request("GET", "/parameters", params=params)
 
 
-class CompletionClient(DifyClient):
+class CompletionClient(ChatbotClient):
     def create_completion_message(self, inputs, query, response_mode, user):
         data = {
             "inputs": inputs,
@@ -40,7 +40,7 @@ class CompletionClient(DifyClient):
         return self._send_request("POST", "/completion-messages", data, stream=True if response_mode == "streaming" else False)
 
 
-class ChatClient(DifyClient):
+class ChatClient(ChatbotClient):
     def create_chat_message(self, inputs, query, user, response_mode="blocking", conversation_id=None):
         data = {
             "inputs": inputs,

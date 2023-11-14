@@ -5,7 +5,7 @@ document.getElementById('save-button').addEventListener('click', function (e) {
   const errorTip = document.getElementById('error-tip');
 
   if (chatbotUrl.trim() === "") {
-      errorTip.textContent = "Dify ChatBot URL cannot be empty.";
+      errorTip.textContent = "Chatbot ChatBot URL cannot be empty.";
   } else {
     errorTip.textContent = "";
 

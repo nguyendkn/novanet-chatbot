@@ -1,16 +1,16 @@
-# Dify Node.js SDK
-This is the Node.js SDK for the Dify API, which allows you to easily integrate Dify into your Node.js applications.
+# Chatbot Node.js SDK
+This is the Node.js SDK for the Chatbot API, which allows you to easily integrate Chatbot into your Node.js applications.
 
 ## Install
 ```bash
-npm install dify-client
+npm install chatbot-client
 ```
 
 ## Usage
 After installing the SDK, you can use it in your project like this:
 
 ```js
-import { DifyClient, ChatClient, CompletionClient } from 'dify-client'
+import { ChatbotClient, ChatClient, CompletionClient } from 'chatbot-client'
 
 const API_KEY = 'your-api-key-here'
 const user = `random-user-id`
@@ -43,7 +43,7 @@ chatClient.getConversationMessages(conversationId, user)
 chatClient.renameConversation(conversationId, name, user)
 
 
-const client = new DifyClient(API_KEY)
+const client = new ChatbotClient(API_KEY)
 // Fetch application parameters
 client.getApplicationParameters(user)
 // Provide feedback for a message
@@ -51,7 +51,7 @@ client.messageFeedback(messageId, rating, user)
 
 ```
 
-Replace 'your-api-key-here' with your actual Dify API key.Replace 'your-app-id-here' with your actual Dify APP ID.
+Replace 'your-api-key-here' with your actual Chatbot API key.Replace 'your-app-id-here' with your actual Chatbot APP ID.
 
 ## License
 This SDK is released under the MIT License.

@@ -1,12 +1,12 @@
 {
-  "name": "dify-client",
+  "name": "chatbot-client",
   "version": "2.0.0",
-  "description": "This is the Node.js SDK for the Dify.AI API, which allows you to easily integrate Dify.AI into your Node.js applications.",
+  "description": "This is the Node.js SDK for the Chatbot.AI API, which allows you to easily integrate Chatbot.AI into your Node.js applications.",
   "main": "index.js",
   "type": "module",
   "keywords": [
-    "Dify",
-    "Dify.AI",
+    "Chatbot",
+    "Chatbot.AI",
     "LLM"
   ],
   "author": "Joel",

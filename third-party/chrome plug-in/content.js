@@ -1,6 +1,6 @@
 const storage = chrome.storage.sync;
 chrome.storage.sync.get(['chatbotUrl'], function(result) {
-  window.difyChatbotConfig = { 
+  window.chatbotChatbotConfig = { 
     chatbotUrl: result.chatbotUrl,
   };
 });
@@ -8,9 +8,9 @@ chrome.storage.sync.get(['chatbotUrl'], function(result) {
 document.body.onload = embedChatbot;
 
 async function embedChatbot() {
-  const difyChatbotConfig = window.difyChatbotConfig;
-  if (!difyChatbotConfig) {
-    console.warn('Dify Chatbot Url is empty or is not provided');
+  const chatbotChatbotConfig = window.chatbotChatbotConfig;
+  if (!chatbotChatbotConfig) {
+    console.warn('Chatbot Chatbot Url is empty or is not provided');
     return;
   }
   const openIcon = `<svg
@@ -49,9 +49,9 @@ async function embedChatbot() {
   function createIframe() {
     const iframe = document.createElement('iframe');
     iframe.allow = "fullscreen;microphone"
-    iframe.title = "dify chatbot bubble window"
-    iframe.id = 'dify-chatbot-bubble-window'
-    iframe.src = difyChatbotConfig.chatbotUrl
+    iframe.title = "chatbot chatbot bubble window"
+    iframe.id = 'chatbot-chatbot-bubble-window'
+    iframe.src = chatbotChatbotConfig.chatbotUrl
     iframe.style.cssText = 'border: none; position: fixed; flex-direction: column; justify-content: space-between; box-shadow: rgba(150, 150, 150, 0.2) 0px 10px 30px 0px, rgba(150, 150, 150, 0.2) 0px 0px 0px 1px; bottom: 6.7rem; right: 1rem; width: 30rem; height: 48rem; border-radius: 0.75rem; display: flex; z-index: 2147483647; overflow: hidden; left: unset; background-color: #F3F4F6;'
     document.body.appendChild(iframe);
   }
@@ -131,12 +131,12 @@ async function embedChatbot() {
     }
   }
 
-  const targetButton = document.getElementById("dify-chatbot-bubble-button");
+  const targetButton = document.getElementById("chatbot-chatbot-bubble-button");
 
   if (!targetButton) {
     // create button
     const containerDiv = document.createElement("div");
-    containerDiv.id = 'dify-chatbot-bubble-button';
+    containerDiv.id = 'chatbot-chatbot-bubble-button';
     containerDiv.style.cssText = `position: fixed; bottom: 3rem; right: 1rem; width: 50px; height: 50px; border-radius: 25px; background-color: #155EEF; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px; cursor: move; z-index: 2147483647; transition: all 0.2s ease-in-out 0s; left: unset; transform: scale(1); :hover {transform: scale(1.1);}`;
     const displayDiv = document.createElement('div');
     displayDiv.style.cssText = "display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; z-index: 2147483647;";
@@ -147,7 +147,7 @@ async function embedChatbot() {
 
     // add click event to control iframe display
     containerDiv.addEventListener('click', function () {
-      const targetIframe = document.getElementById('dify-chatbot-bubble-window');
+      const targetIframe = document.getElementById('chatbot-chatbot-bubble-window');
       if (!targetIframe) {
         createIframe();
         displayDiv.innerHTML = closeIcon;

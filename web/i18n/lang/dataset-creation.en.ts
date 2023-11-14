@@ -105,7 +105,7 @@ const translation = {
   },
   stepThree: {
     creationTitle: '🎉 Dataset created',
-    creationContent: 'We automatically named the dataset, you can modify it at any time',
+    creationContent: 'We automatically named the dataset, you can mochatbot it at any time',
     label: 'Dataset name',
     additionTitle: '🎉 Document uploaded',
     additionP1: 'The document has been uploaded to the dataset',

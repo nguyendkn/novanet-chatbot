@@ -1,5 +1,5 @@
 {
-  "name": "dify-web",
+  "name": "chatbot-web",
   "version": "0.3.30",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "next lint",
     "fix": "next lint --fix",
     "eslint-fix": "eslint --fix",
-    "prepare": "cd ../ && node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install ./web/.husky",
+    "prepare": "cd ../ && node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)}\"",
     "gen-icons": "node ./app/components/base/icons/script.js",
     "uglify-embed": "node ./bin/uglify-embed"
   },
@@ -100,7 +100,6 @@
     "cross-env": "^7.0.3",
     "eslint": "8.36.0",
     "eslint-config-next": "^13.4.7",
-    "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "miragejs": "^0.1.47",
     "postcss": "^8.4.31",

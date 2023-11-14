@@ -5,10 +5,10 @@ labels:
 body:
 - type: markdown
   attributes:
-    value: Please make sure to [search for existing issues](https://github.com/langgenius/dify/issues) before filing a new one!
+    value: Please make sure to [search for existing issues](https://github.com/langgenius/chatbot/issues) before filing a new one!
 - type: input
   attributes:
-    label: Dify version
+    label: Chatbot version
     placeholder: 0.3.21
     description: Hover over system tray icon or look at Settings
   validations:

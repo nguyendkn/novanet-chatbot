@@ -7,7 +7,7 @@ from langchain.input import print_text
 from langchain.schema import AgentAction, AgentFinish, LLMResult, BaseMessage
 
 
-class DifyStdOutCallbackHandler(BaseCallbackHandler):
+class ChatbotStdOutCallbackHandler(BaseCallbackHandler):
     """Callback Handler that prints to std out."""
 
     def __init__(self, color: Optional[str] = None) -> None:
@@ -145,7 +145,7 @@ class DifyStdOutCallbackHandler(BaseCallbackHandler):
         return not os.environ.get("DEBUG") or os.environ.get("DEBUG").lower() != 'true'
 
 
-class DifyStreamingStdOutCallbackHandler(DifyStdOutCallbackHandler):
+class ChatbotStreamingStdOutCallbackHandler(ChatbotStdOutCallbackHandler):
     """Callback handler for streaming. Only works with LLMs that support streaming."""
 
     def on_llm_new_token(self, token: str, **kwargs: Any) -> None:

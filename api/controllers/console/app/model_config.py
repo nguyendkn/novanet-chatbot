@@ -21,7 +21,7 @@ class ModelConfigResource(Resource):
     @login_required
     @account_initialization_required
     def post(self, app_id):
-        """Modify app model config"""
+        """Mochatbot app model config"""
         app_id = str(app_id)
 
         app_model = _get_app(app_id)

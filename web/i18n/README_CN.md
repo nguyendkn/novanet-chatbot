@@ -73,7 +73,7 @@ const formatDate = (timestamp: any) => {
 
 ## 验证
 
-新增语言包建议通过本地部署最新代码来验证，可参考：https://docs.dify.ai/getting-started/install-self-hosted/local-source-code
+新增语言包建议通过本地部署最新代码来验证，可参考：https://docs.chatbot.ai/getting-started/install-self-hosted/local-source-code
 验证点：
 1. 首次初始化安装是否存在新语言下拉选项，以及是否可以用新语言进行初始化
 2. 个人设置中是否存在新语言下拉选项，以及是否可以选择并保存新语言

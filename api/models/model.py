@@ -10,10 +10,10 @@ from extensions.ext_database import db
 from .account import Account, Tenant
 
 
-class DifySetup(db.Model):
-    __tablename__ = 'dify_setups'
+class ChatbotSetup(db.Model):
+    __tablename__ = 'chatbot_setups'
     __table_args__ = (
-        db.PrimaryKeyConstraint('version', name='dify_setup_pkey'),
+        db.PrimaryKeyConstraint('version', name='chatbot_setup_pkey'),
     )
 
     version = db.Column(db.String(255), nullable=False)

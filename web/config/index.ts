@@ -21,12 +21,12 @@ else if (
 }
 else {
   if (isDevelopment) {
-    apiPrefix = 'https://cloud.dify.dev/console/api'
-    publicApiPrefix = 'https://dev.udify.app/api'
+    apiPrefix = 'https://cloud.chatbot.dev/console/api'
+    publicApiPrefix = 'https://dev.uchatbot.app/api'
   }
   else {
     // const domainParts = globalThis.location?.host?.split('.');
-    // in production env, the host is dify.app . In other env, the host is [dev].dify.app
+    // in production env, the host is chatbot.app . In other env, the host is [dev].chatbot.app
     // const env = domainParts.length === 2 ? 'ai' : domainParts?.[0];
     apiPrefix = '/console/api'
     publicApiPrefix = '/api' // avoid browser private mode api cross origin
